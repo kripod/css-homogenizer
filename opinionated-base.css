@@ -1,0 +1,101 @@
+/* https://github.com/jensimmons/cssremedy
+ * ========================================================================== */
+
+/**
+ * Overflow by default is bad
+ */
+pre {
+	white-space: pre-wrap;
+}
+
+/**
+ * 1. Block display is usually what we want
+ * 2. Remove strange space-below when inline
+ * 3. Responsive by default
+ */
+img,
+svg,
+video,
+canvas,
+iframe,
+audio {
+	display: block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+/**
+ * Maintain intrinsic aspect ratios when 'max-width' is applied
+ * (iframe, embed, and object have no intrinsic ratio, set height explicitly)
+ */
+img,
+svg,
+video,
+canvas {
+	height: auto;
+}
+
+/**
+ * There is no good reason elements default to 300px,
+ * and audio files are unlikely to come with a width attribute
+ */
+audio {
+	width: 100%;
+}
+
+/* https://github.com/csstools/sanitize.css
+ * ========================================================================== */
+
+/**
+ * 1. Prevent double cell borders
+ * 2. Use evenly sized numbers to line them up under each other
+ */
+
+table {
+	border-collapse: collapse;
+	font-variant-numeric: tabular-nums;
+}
+
+/**
+ * Let users resize multi-line text fields on their own
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* Custom rules
+ * ========================================================================== */
+
+/**
+ * Prevent overflow caused by long words when absolutely necessary
+ */
+
+html {
+	overflow-wrap: break-word;
+}
+
+/**
+ * Modernize 'border-style' (instead of 'inset')
+ */
+hr {
+	border: solid;
+}
+
+/**
+ * Valid use cases for `<u>` are usually indicated by a wavy underline:
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#Usage_notes
+ */
+
+u {
+	text-decoration-style: wavy;
+}
+
+/**
+ * Cater for the 'hidden' attribute:
+ * https://css-tricks.com/the-hidden-attribute-is-visibly-weak/
+ */
+
+[hidden] {
+	display: none !important;
+}

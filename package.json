@@ -1,0 +1,26 @@
+{
+	"name": "css-homogenizer",
+	"version": "1.0.0",
+	"description": "Base CSS encouraging proper HTML semantics and the use of custom design tokens",
+	"keywords": [
+		"reset",
+		"base",
+		"normalize"
+	],
+	"homepage": "https://github.com/kripod/css-homogenizer#readme",
+	"bugs": "https://github.com/kripod/css-homogenizer/issues",
+	"repository": "kripod/css-homogenizer",
+	"license": "MIT",
+	"author": "Kristóf Poduszló <kripod@protonmail.com>",
+	"main": "reset.css",
+	"files": [
+		"reset.css",
+		"opinionated-base.css"
+	],
+	"scripts": {
+		"format": "prettier --ignore-path .gitignore --write *.{css,html,json,md,yml}"
+	},
+	"devDependencies": {
+		"prettier": "^2.0.5"
+	}
+}

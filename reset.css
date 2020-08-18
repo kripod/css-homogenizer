@@ -1,0 +1,76 @@
+/**
+ * Based on HTML rendering suggestions and the differences across UA sheets:
+ * https://html.spec.whatwg.org/multipage/rendering.html
+ *
+ * Selectors are chunked in ordered groups for better compression (e.g. gzip).
+ */
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+dl,
+dd,
+figure,
+pre,
+button, /* Only for Safari */
+input, /* Only for Safari */
+select, /* Only for Safari */
+textarea, /* Only for Safari */
+hr,
+fieldset,
+ol,
+ul,
+menu {
+	margin: 0;
+}
+
+th,
+td,
+legend,
+fieldset,
+ol,
+ul,
+menu {
+	padding: 0;
+}
+
+hr,
+fieldset,
+iframe {
+	border: 0;
+}
+
+body {
+	line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+address {
+	font: inherit; /* font-size, font-weight, font-style */
+}
+
+ol,
+ul,
+menu {
+	list-style: none; /* list-style-type */
+}
+
+table {
+	border-spacing: 0;
+}
+
+th {
+	text-align: inherit;
+}
