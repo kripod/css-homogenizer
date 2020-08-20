@@ -62,6 +62,7 @@ table {
 
 textarea {
 	resize: vertical;
+	resize: block;
 }
 
 /* Custom rules

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **base:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements
+
 ## [1.0.0] - 2020-08-18
 
 ### Added
