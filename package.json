@@ -18,9 +18,9 @@
 		"opinionated-base.css"
 	],
 	"scripts": {
-		"format": "prettier --ignore-path .gitignore --write *.{css,html,json,md,yml}"
+		"format": "prettier --ignore-path ./.gitignore --write --ignore-unknown \"./*\""
 	},
 	"devDependencies": {
-		"prettier": "^2.0.5"
+		"prettier": "^2.4.0"
 	}
 }
