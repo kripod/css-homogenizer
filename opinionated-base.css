@@ -2,8 +2,18 @@
  * ========================================================================== */
 
 /**
+ * Maintain `hidden` behaviour when overriding `display` values:
+ * https://css-tricks.com/the-hidden-attribute-is-visibly-weak/
+ */
+
+[hidden] {
+	display: none !important;
+}
+
+/**
  * Overflow by default is bad
  */
+
 pre {
 	white-space: pre-wrap;
 }
@@ -13,6 +23,7 @@ pre {
  * 2. Remove strange space-below when inline
  * 3. Responsive by default
  */
+
 img,
 svg,
 video,
@@ -25,9 +36,10 @@ audio {
 }
 
 /**
- * Maintain intrinsic aspect ratios when 'max-width' is applied
- * (iframe, embed, and object have no intrinsic ratio, set height explicitly)
+ * Maintain intrinsic aspect ratios when `max-width` is applied
+ * (`iframe` has no intrinsic ratio, so its `height` needs to be set explicitly)
  */
+
 img,
 svg,
 video,
@@ -39,6 +51,7 @@ canvas {
  * There is no good reason elements default to 300px,
  * and audio files are unlikely to come with a width attribute
  */
+
 audio {
 	width: 100%;
 }
@@ -76,11 +89,14 @@ html {
 	overflow-wrap: break-word;
 }
 
-/**
- * Modernize 'border-style' (instead of 'inset')
+/*
+ * 1. Thin horizontal line
+ * 2. Modernize `border-style` (instead of `inset`)
  */
+
 hr {
-	border: solid;
+	border-top-width: 1px;
+	border-style: solid;
 }
 
 /**
@@ -90,13 +106,4 @@ hr {
 
 u {
 	text-decoration-style: wavy;
-}
-
-/**
- * Cater for the 'hidden' attribute:
- * https://css-tricks.com/the-hidden-attribute-is-visibly-weak/
- */
-
-[hidden] {
-	display: none !important;
 }

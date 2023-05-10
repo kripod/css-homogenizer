@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **reset:** inherit `color` and `text-decoration` on links
 - **reset:** set `opacity: 1` and `color: gray` on `::placeholder` to make Firefox styles consistent
 
+### Fixed
+
+- **opinionated:** `hr` border width and style
+
 ### Changed
 
 - **reset:** set `line-height: 1` on `html` instead of `body`
@@ -22,14 +26,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **base:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements ([bf89271](https://github.com/kripod/css-homogenizer/commit/bf89271abfbc62488ef098425aa58ff9b5ed4e18))
+- **opinionated:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements ([bf89271](https://github.com/kripod/css-homogenizer/commit/bf89271abfbc62488ef098425aa58ff9b5ed4e18))
 
 ## [1.0.0] - 2020-08-18
 
 ### Added
 
 - **reset:** initial release
-- **base:** initial release
+- **opinionated:** initial release
 
 [unreleased]: https://github.com/kripod/css-homogenizer/compare/v1.1.0...HEAD
 [1.1.0]: https://github.com/kripod/css-homogenizer/compare/v1.0.0...v1.1.0
