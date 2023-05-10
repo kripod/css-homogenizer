@@ -5,6 +5,10 @@
  * Selectors are chunked in ordered groups for better compression (e.g. gzip).
  */
 
+html {
+	line-height: 1;
+}
+
 body,
 p,
 h1,
@@ -18,12 +22,12 @@ dl,
 dd,
 figure,
 pre,
+hr,
+fieldset,
 button, /* Only for Safari */
 input, /* Only for Safari */
 select, /* Only for Safari */
 textarea, /* Only for Safari */
-hr,
-fieldset,
 ol,
 ul,
 menu {
@@ -34,6 +38,10 @@ th,
 td,
 legend,
 fieldset,
+button,
+input,
+select,
+textarea,
 ol,
 ul,
 menu {
@@ -42,12 +50,21 @@ menu {
 
 hr,
 fieldset,
+button,
+input,
+select,
+textarea,
 iframe {
 	border: 0;
 }
 
-body {
-	line-height: 1;
+button,
+input,
+select,
+textarea {
+	background: none;
+	font: inherit;
+	color: inherit;
 }
 
 h1,
@@ -59,6 +76,11 @@ h6,
 th,
 address {
 	font: inherit; /* font-size, font-weight, font-style */
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
 }
 
 ol,
@@ -73,4 +95,10 @@ table {
 
 th {
 	text-align: inherit;
+}
+
+/* Only for Firefox */
+::placeholder {
+	color: gray;
+	opacity: 1;
 }
