@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **base:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements ([bf89271](https://github.com/kripod/css-homogenizer/commit/bf89271abfbc62488ef098425aa58ff9b5ed4e18))
+- **base:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements
 
 ## [1.0.0] - 2020-08-18
 
