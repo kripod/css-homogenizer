@@ -7,7 +7,7 @@
  */
 
 [hidden] {
-	display: none !important;
+  display: none !important;
 }
 
 /**
@@ -15,7 +15,7 @@
  */
 
 pre {
-	white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 /**
@@ -30,9 +30,9 @@ video,
 canvas,
 iframe,
 audio {
-	display: block;
-	vertical-align: middle;
-	max-width: 100%;
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
 }
 
 /**
@@ -44,7 +44,7 @@ img,
 svg,
 video,
 canvas {
-	height: auto;
+  height: auto;
 }
 
 /**
@@ -53,7 +53,7 @@ canvas {
  */
 
 audio {
-	width: 100%;
+  width: 100%;
 }
 
 /* https://github.com/csstools/sanitize.css
@@ -65,8 +65,8 @@ audio {
  */
 
 table {
-	border-collapse: collapse;
-	font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
 }
 
 /**
@@ -74,8 +74,8 @@ table {
  */
 
 textarea {
-	resize: vertical;
-	resize: block;
+  resize: vertical;
+  resize: block;
 }
 
 /* Custom rules
@@ -86,7 +86,7 @@ textarea {
  */
 
 html {
-	overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -95,8 +95,8 @@ html {
  */
 
 hr {
-	border-top-width: 1px;
-	border-style: solid;
+  border-top-width: 1px;
+  border-style: solid;
 }
 
 /**
@@ -105,5 +105,5 @@ hr {
  */
 
 u {
-	text-decoration-style: wavy;
+  text-decoration-style: wavy;
 }

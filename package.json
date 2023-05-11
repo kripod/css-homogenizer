@@ -1,28 +1,28 @@
 {
-	"name": "css-homogenizer",
-	"version": "1.1.0",
-	"description": "Base CSS encouraging proper HTML semantics and the use of custom design tokens",
-	"keywords": [
-		"reset",
-		"base",
-		"normalize"
-	],
-	"homepage": "https://github.com/kripod/css-homogenizer#readme",
-	"bugs": "https://github.com/kripod/css-homogenizer/issues",
-	"repository": "kripod/css-homogenizer",
-	"license": "MIT",
-	"author": "Kristóf Poduszló <kripod@protonmail.com>",
-	"main": "reset.css",
-	"files": [
-		"reset.css",
-		"opinionated-base.css"
-	],
-	"scripts": {
-		"lint": "prettier \"**/*\" --check --ignore-unknown",
-		"lint:fix": "prettier \"**/*\" --write --ignore-unknown"
-	},
-	"devDependencies": {
-		"prettier": "^2.8.8"
-	},
-	"packageManager": "pnpm@8.5.0"
+  "name": "css-homogenizer",
+  "version": "1.1.0",
+  "description": "Base CSS encouraging proper HTML semantics and the use of custom design tokens",
+  "keywords": [
+    "reset",
+    "base",
+    "normalize"
+  ],
+  "homepage": "https://github.com/kripod/css-homogenizer#readme",
+  "bugs": "https://github.com/kripod/css-homogenizer/issues",
+  "repository": "kripod/css-homogenizer",
+  "license": "MIT",
+  "author": "Kristóf Poduszló <kripod@protonmail.com>",
+  "main": "reset.css",
+  "files": [
+    "reset.css",
+    "opinionated-base.css"
+  ],
+  "scripts": {
+    "lint": "prettier \"**/*\" --check --ignore-unknown",
+    "lint:fix": "prettier \"**/*\" --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "packageManager": "pnpm@8.5.0"
 }

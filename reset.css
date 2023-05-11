@@ -6,7 +6,7 @@
  */
 
 html {
-	line-height: 1;
+  line-height: 1;
 }
 
 body,
@@ -31,7 +31,7 @@ textarea, /* Only for Safari */
 ol,
 ul,
 menu {
-	margin: 0;
+  margin: 0;
 }
 
 th,
@@ -45,7 +45,7 @@ textarea,
 ol,
 ul,
 menu {
-	padding: 0;
+  padding: 0;
 }
 
 hr,
@@ -55,16 +55,16 @@ input,
 select,
 textarea,
 iframe {
-	border: 0;
+  border: 0;
 }
 
 button,
 input,
 select,
 textarea {
-	background: none;
-	font: inherit;
-	color: inherit;
+  background: none;
+  font: inherit;
+  color: inherit;
 }
 
 h1,
@@ -75,30 +75,30 @@ h5,
 h6,
 th,
 address {
-	font: inherit; /* font-size, font-weight, font-style */
+  font: inherit; /* font-size, font-weight, font-style */
 }
 
 a {
-	color: inherit;
-	text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 ol,
 ul,
 menu {
-	list-style: none; /* list-style-type */
+  list-style: none; /* list-style-type */
 }
 
 table {
-	border-spacing: 0;
+  border-spacing: 0;
 }
 
 th {
-	text-align: inherit;
+  text-align: inherit;
 }
 
 /* Only for Firefox */
 ::placeholder {
-	color: gray;
-	opacity: 1;
+  color: gray;
+  opacity: 1;
 }
