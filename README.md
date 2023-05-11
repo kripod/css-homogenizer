@@ -39,7 +39,7 @@ Catering for the needs of token-based theming systems, this project was born.
     ```js
     import "modern-normalize/modern-normalize.css";
     import "css-homogenizer/reset.css";
-    import "css-homogenizer/opinionated-base.css";
+    import "css-homogenizer/base.css";
     ```
 
     Embed the snippet or parts of it according to your framework/workflow documentation.
@@ -54,11 +54,12 @@ Nullifies spacings, borders and several typography-related settings:
 
 - The default line height is reduced to match each element's own font size.
 - Heading (`h1`–`h6`), `th` and `address` elements inherit their font properties and text alignment from parents.
-- Lists (`ul`, `ol`, `menu`) are unstyled to promote proper HTML semantics over misleading visuals.
+- List (`ul`, `ol`, `menu`) and `a` elements are unstyled to promote proper HTML semantics over misleading visuals.
+- Placeholders have `opacity: 1` set for consistency between browsers.
 
-Form element styles are kept intact, maintaining the native look on each platform. Obsolete and deprecated HTML elements are ignored, as their usage is strongly discouraged.
+Obsolete and deprecated HTML elements are ignored, as their usage is strongly discouraged.
 
-### [`opinionated-base.css`](./opinionated-base.css)
+### [`base.css`](./base.css)
 
 Provides a minimalistic set of generally useful rules. Please refer to the file's inline comments for further details.
 

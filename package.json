@@ -14,8 +14,8 @@
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
   "main": "reset.css",
   "files": [
-    "reset.css",
-    "opinionated-base.css"
+    "base.css",
+    "reset.css"
   ],
   "scripts": {
     "lint": "prettier \"**/*\" --check --ignore-unknown",

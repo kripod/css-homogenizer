@@ -16,24 +16,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- **opinionated:** `hr` border width and style
+- **base:** `hr` border width and style
 
 ### Changed
 
+- **base:** rename `opinionated-base.css` to `base.css`
 - **reset:** set `line-height: 1` on `html` instead of `body`
 
 ## [1.1.0] - 2020-08-20
 
 ### Added
 
-- **opinionated:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements ([bf89271](https://github.com/kripod/css-homogenizer/commit/bf89271abfbc62488ef098425aa58ff9b5ed4e18))
+- **base:** vertical `writing-mode` support for changing the `resize` property of `textarea` elements ([bf89271](https://github.com/kripod/css-homogenizer/commit/bf89271abfbc62488ef098425aa58ff9b5ed4e18))
 
 ## [1.0.0] - 2020-08-18
 
 ### Added
 
 - **reset:** initial release
-- **opinionated:** initial release
+- **base:** initial release
 
 [unreleased]: https://github.com/kripod/css-homogenizer/compare/v1.1.0...HEAD
 [1.1.0]: https://github.com/kripod/css-homogenizer/compare/v1.0.0...v1.1.0
