@@ -18,9 +18,11 @@
 		"opinionated-base.css"
 	],
 	"scripts": {
-		"format": "prettier --ignore-path ./.gitignore --write --ignore-unknown \"./*\""
+		"lint": "prettier \"**/*\" --check --ignore-unknown",
+		"lint:fix": "prettier \"**/*\" --write --ignore-unknown"
 	},
 	"devDependencies": {
-		"prettier": "^2.4.0"
-	}
+		"prettier": "^2.8.8"
+	},
+	"packageManager": "pnpm@8.5.0"
 }
