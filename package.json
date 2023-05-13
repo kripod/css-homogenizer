@@ -14,7 +14,9 @@
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
   "exports": {
     "./base.css": "./base.css",
-    "./reset.css": "./reset.css"
+    "./reset.css": "./reset.css",
+    "./react/jsx-runtime": "./react/jsx-runtime.js",
+    "./react/jsx-dev-runtime": "./react/jsx-dev-runtime.js"
   },
   "main": "reset.css",
   "files": [
@@ -26,6 +28,7 @@
     "lint:fix": "prettier \"**/*\" --write --ignore-unknown"
   },
   "devDependencies": {
+    "@types/react": "^18.2.6",
     "prettier": "^2.8.8"
   },
   "packageManager": "pnpm@8.5.0"
