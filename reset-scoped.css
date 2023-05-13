@@ -1,0 +1,105 @@
+/**
+ * Based on HTML rendering suggestions and the differences across UA sheets:
+ * https://html.spec.whatwg.org/multipage/rendering.html
+ *
+ * Selectors are chunked in ordered groups for better compression (e.g. gzip).
+ */
+
+._html {
+  line-height: 1;
+}
+
+._body,
+._p,
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6,
+._blockquote,
+._dl,
+._dd,
+._figure,
+._pre,
+._hr,
+._fieldset,
+._button, /* Only for Safari */
+._select, /* Only for Safari */
+._input, /* Only for Safari */
+._textarea, /* Only for Safari */
+._ol,
+._ul,
+._menu {
+  margin: 0;
+}
+
+._th,
+._td,
+._legend,
+._fieldset,
+._button,
+._select,
+._input,
+._textarea,
+._ol,
+._ul,
+._menu {
+  padding: 0;
+}
+
+._hr,
+._fieldset,
+._button,
+._select,
+._input,
+._textarea,
+._iframe {
+  border: 0;
+}
+
+._button,
+._select,
+._input,
+._textarea {
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6,
+._th,
+._address {
+  font: inherit; /* font-size, font-weight, font-style */
+}
+
+._a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+._ol,
+._ul,
+._menu {
+  list-style: none; /* list-style-type */
+}
+
+._table {
+  border-spacing: 0;
+}
+
+._th {
+  text-align: inherit;
+}
+
+/* Only for Firefox */
+._input::placeholder,
+._textarea::placeholder {
+  color: gray;
+  opacity: 1;
+}
