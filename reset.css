@@ -25,8 +25,8 @@ pre,
 hr,
 fieldset,
 button, /* Only for Safari */
-input, /* Only for Safari */
 select, /* Only for Safari */
+input, /* Only for Safari */
 textarea, /* Only for Safari */
 ol,
 ul,
@@ -39,8 +39,8 @@ td,
 legend,
 fieldset,
 button,
-input,
 select,
+input,
 textarea,
 ol,
 ul,
@@ -51,16 +51,16 @@ menu {
 hr,
 fieldset,
 button,
-input,
 select,
+input,
 textarea,
 iframe {
   border: 0;
 }
 
 button,
-input,
 select,
+input,
 textarea {
   background: none;
   font: inherit;
@@ -98,7 +98,8 @@ th {
 }
 
 /* Only for Firefox */
-::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: gray;
   opacity: 1;
 }
