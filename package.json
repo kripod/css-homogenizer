@@ -15,8 +15,8 @@
   "exports": {
     "./base.css": "./base.css",
     "./reset.css": "./reset.css",
-    "./react/jsx-runtime": "./react/jsx-runtime.js",
-    "./react/jsx-dev-runtime": "./react/jsx-dev-runtime.js"
+    "./react/reset/jsx-runtime": "./react/reset/jsx-runtime.js",
+    "./react/reset/jsx-dev-runtime": "./react/reset/jsx-dev-runtime.js"
   },
   "main": "reset.css",
   "files": [
