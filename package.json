@@ -15,6 +15,7 @@
   "exports": {
     "./base.css": "./base.css",
     "./reset.css": "./reset.css",
+    "./reset-scoped.css": "./reset-scoped.css",
     "./react/reset/jsx-runtime": "./react/reset/jsx-runtime.js",
     "./react/reset/jsx-dev-runtime": "./react/reset/jsx-dev-runtime.js"
   },
