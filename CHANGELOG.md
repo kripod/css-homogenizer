@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **reset:** apply `::placeholder` styles only on `input` and `textarea`
+- **reset:** reorder styles for better maintainability
 
 ## [2.0.0] - 2023-05-11
 

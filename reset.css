@@ -2,69 +2,61 @@
  * Based on HTML rendering suggestions and the differences across UA sheets:
  * https://html.spec.whatwg.org/multipage/rendering.html
  *
- * Selectors are chunked in ordered groups for better compression (e.g. gzip).
+ * Selectors sorted as they appear in the HTML Standard for better compression.
  */
 
 html {
   line-height: 1;
 }
 
+/* Only for Safari: button, select, input, textarea */
 body,
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+p,
+hr,
+pre,
 blockquote,
+ol,
+ul,
+menu,
 dl,
 dd,
 figure,
-pre,
-hr,
-fieldset,
-button, /* Only for Safari */
-select, /* Only for Safari */
-input, /* Only for Safari */
-textarea, /* Only for Safari */
-ol,
-ul,
-menu {
+input,
+button,
+select,
+textarea,
+fieldset {
   margin: 0;
 }
 
-th,
-td,
-legend,
-fieldset,
-button,
-select,
-input,
-textarea,
-ol,
-ul,
-menu {
-  padding: 0;
-}
-
 hr,
-fieldset,
+iframe,
+input,
 button,
 select,
-input,
 textarea,
-iframe {
+fieldset {
   border: 0;
 }
 
+ol,
+ul,
+menu,
+td,
+th,
+input,
 button,
 select,
-input,
-textarea {
-  background: none;
-  font: inherit;
-  color: inherit;
+textarea,
+fieldset,
+legend {
+  padding: 0;
 }
 
 h1,
@@ -73,14 +65,9 @@ h3,
 h4,
 h5,
 h6,
-th,
-address {
+address,
+th {
   font: inherit; /* font-size, font-weight, font-style */
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
 }
 
 ol,
@@ -89,12 +76,26 @@ menu {
   list-style: none; /* list-style-type */
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 table {
   border-spacing: 0;
 }
 
 th {
   text-align: inherit;
+}
+
+input,
+button,
+select,
+textarea {
+  background: none;
+  font: inherit;
+  color: inherit;
 }
 
 /* Only for Firefox */
