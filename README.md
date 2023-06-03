@@ -72,6 +72,6 @@ Provides a minimalistic set of generally useful rules. Please refer to the file'
 
 ## Acknowledgements
 
-This project was primarily inspired by [Reset CSS](https://meyerweb.com/eric/tools/css/reset/), [sanitize.css](https://github.com/csstools/sanitize.css) and [CSS Remedy](https://github.com/jensimmons/cssremedy). It wouldn't have been possible without the long-standing efforts of the authors behind those predecessors.
+This project was primarily inspired by [Reset CSS](https://meyerweb.com/eric/tools/css/reset/), [CSS Remedy](https://github.com/jensimmons/cssremedy) and [sanitize.css](https://github.com/csstools/sanitize.css). It wouldn't have been possible without the long-standing efforts of the authors behind those predecessors.
 
 The logo's test tube emoji is courtesy of [Twemoji](https://twemoji.twitter.com/) and the font in use is [Lobster](https://fonts.google.com/specimen/Lobster).
