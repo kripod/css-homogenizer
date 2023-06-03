@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- **reset:** replace `border: 0` with `border-width: 0` for compatibility with base styles
+
 ## [3.0.0] - 2023-06-03
 
 ### Added

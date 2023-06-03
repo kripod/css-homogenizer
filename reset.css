@@ -42,7 +42,7 @@ button,
 select,
 textarea,
 fieldset {
-  border: 0;
+  border-width: 0;
 }
 
 ol,
