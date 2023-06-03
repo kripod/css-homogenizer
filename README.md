@@ -32,7 +32,7 @@ Catering for the needs of token-based theming systems, this project was born.
     npm install css-homogenizer modern-normalize
     ```
 
-    _Using [modern-normalize](https://github.com/sindresorhus/modern-normalize) is optional but recommended to fix common browser inconsistencies._
+    _Using either [modern-normalize](https://github.com/sindresorhus/modern-normalize) or [@csstools/normalize.css](https://github.com/csstools/normalize.css) is optional but recommended to fix common browser inconsistencies._
 
 2.  Include the following global styles **in order, before any custom CSS:**
 
