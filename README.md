@@ -55,6 +55,7 @@ Nullifies spacings, borders and several typography-related settings:
 - The default line height is reduced to match each element's own font size.
 - Heading (`h1`–`h6`), `th` and `address` elements inherit their font properties and text alignment from parents.
 - List (`ul`, `ol`, `menu`) and `a` elements are unstyled to promote proper HTML semantics over misleading visuals.
+- Form controls are unstyled to cater for overrides.
 - Placeholders have `opacity: 1` set for consistency between browsers.
 
 Obsolete and deprecated HTML elements are ignored, as their usage is strongly discouraged.
