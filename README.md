@@ -69,24 +69,6 @@ Provides a minimalistic set of generally useful rules. Please refer to the file'
 - Latest Firefox
 - Latest Safari
 
-## Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/kripod"><img src="https://avatars3.githubusercontent.com/u/14854048?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kristóf Poduszló</b></sub></a><br /><a href="#maintenance-kripod" title="Maintenance">🚧</a> <a href="https://github.com/kripod/record-like-deep-assign/commits?author=kripod" title="Code">💻</a> <a href="https://github.com/kripod/record-like-deep-assign/commits?author=kripod" title="Documentation">📖</a> <a href="#ideas-kripod" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-kripod" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 ## Acknowledgements
 
 This project was primarily inspired by [Reset CSS](https://meyerweb.com/eric/tools/css/reset/), [sanitize.css](https://github.com/csstools/sanitize.css) and [CSS Remedy](https://github.com/jensimmons/cssremedy). It wouldn't have been possible without the long-standing efforts of the authors behind those predecessors.
