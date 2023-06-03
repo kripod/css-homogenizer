@@ -1,6 +1,6 @@
 {
   "name": "css-homogenizer",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Base CSS encouraging proper HTML semantics and the use of custom design tokens",
   "keywords": [
     "css",
