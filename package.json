@@ -28,5 +28,5 @@
   "devDependencies": {
     "prettier": "^2.8.8"
   },
-  "packageManager": "pnpm@8.5.0"
+  "packageManager": "pnpm@8.6.0"
 }
