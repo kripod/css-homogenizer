@@ -1,109 +1,97 @@
-/* https://github.com/jensimmons/cssremedy
- * ========================================================================== */
+*,
+::before,
+::after {
+  /* Prevent padding and border from affecting element width */
+  /* https://github.com/jensimmons/cssremedy/issues/4 */
+  box-sizing: border-box;
 
-/**
- * Maintain `hidden` behaviour when overriding `display` values:
- * https://css-tricks.com/the-hidden-attribute-is-visibly-weak/
- */
-
-[hidden] {
-  display: none !important;
-}
-
-/**
- * Overflow by default is bad
- */
-
-pre {
-  white-space: pre-wrap;
-}
-
-/**
- * 1. Block display is usually what we want
- * 2. Remove strange space-below when inline
- * 3. Responsive by default
- */
-
-img,
-svg,
-video,
-canvas,
-iframe,
-audio {
-  display: block;
-  vertical-align: middle;
-  max-width: 100%;
-}
-
-/**
- * Maintain intrinsic aspect ratios when `max-width` is applied
- * (`iframe` has no intrinsic ratio, so its `height` needs to be set explicitly)
- */
-
-img,
-svg,
-video,
-canvas {
-  height: auto;
-}
-
-/**
- * There is no good reason elements default to 300px,
- * and audio files are unlikely to come with a width attribute
- */
-
-audio {
-  width: 100%;
-}
-
-/* https://github.com/csstools/sanitize.css
- * ========================================================================== */
-
-/**
- * 1. Prevent double cell borders
- * 2. Use evenly sized numbers to line them up under each other
- */
-
-table {
-  border-collapse: collapse;
-  font-variant-numeric: tabular-nums;
-}
-
-/**
- * Let users resize multi-line text fields on their own
- */
-
-textarea {
-  resize: vertical;
-  resize: block;
-}
-
-/* Custom rules
- * ========================================================================== */
-
-/**
- * Prevent overflow caused by long words when absolutely necessary
- */
-
-html {
-  overflow-wrap: break-word;
-}
-
-/*
- * 1. Thin horizontal line
- * 2. Modernize `border-style` (instead of `inset`)
- */
-
-hr {
-  border-top-width: 1px;
+  /* Allow adding a border with just a border-width */
+  /* https://github.com/tailwindlabs/tailwindcss/pull/116 */
+  border-width: 0;
   border-style: solid;
 }
 
-/**
- * Valid use cases for `<u>` are usually indicated by a wavy underline:
- * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#Usage_notes
- */
+html {
+  /* Prevent overflow in code blocks */
+  tab-size: 2;
+
+  /* Prevent overflow caused by long words if all other methods fail */
+  overflow-wrap: break-word;
+
+  /* Prevent erroneous text scaling in iOS Safari */
+  /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /* Remove space around edges */
+  margin: 0;
+}
+
+hr {
+  /* Ensure visibility */
+  border-top-width: 1px;
+}
+
+pre {
+  /* Prevent overflow */
+  white-space: pre-wrap;
+}
 
 u {
+  /* Valid use cases are usually indicated by a wavy underline */
+  /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#usage_notes */
   text-decoration-style: wavy;
+}
+
+/* https://github.com/jensimmons/cssremedy/issues/14 */
+img,
+iframe,
+embed,
+object,
+video,
+audio,
+svg,
+canvas {
+  /* Block display is usually what we want */
+  display: block;
+
+  /* Prevent overflow */
+  max-width: 100%;
+
+  /* Remove strange space-below when inline */
+  vertical-align: middle;
+}
+
+/* https://github.com/jensimmons/cssremedy/issues/14 */
+img,
+video,
+svg {
+  /* Preserve aspect ratio when the height attribute is set */
+  height: auto;
+}
+
+audio {
+  /* Fill available space instead of using a fixed width */
+  width: 100%;
+}
+
+audio:not([controls]) {
+  /* Prioritize default behavior over custom styles above */
+  display: none;
+}
+
+/* https://github.com/jensimmons/cssremedy/issues/39 */
+table {
+  /* Prevent double borders */
+  border-collapse: collapse;
+
+  /* Use equal-width numerals */
+  font-variant-numeric: tabular-nums;
+}
+
+textarea {
+  /* Constrain resizing to the block direction */
+  resize: vertical;
+  resize: block;
 }

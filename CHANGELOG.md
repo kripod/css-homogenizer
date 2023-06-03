@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **base:** set `box-sizing: border-box` on `*, ::before, ::after`
+- **base:** set `border-style: solid` and `border-width: 0` on on `*, ::before, ::after` to allow adding a border with just a `border-width`
+- **base:** set `tab-size: 2` on `html` to prevent overflow in code blocks
+- **base:** set `-webkit-text-size-adjust: 100%` on `html` to prevent erroneous text scaling in iOS Safari
+- **base:** set `margin: 0` on `body`
+- **base:** make `embed` and `object` elements responsive
+
+### Changed
+
+- **base:** reorder styles for better maintainability
+
+### Removed
+
+- **base:** redundant `height: auto` on `canvas`
+- **base:** strict enforcement of `display: none` when a `hidden` attribute is present
+
 ## [2.1.0] - 2023-06-03
 
 ### Added
