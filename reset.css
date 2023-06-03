@@ -94,7 +94,12 @@ button,
 select,
 textarea {
   background: none;
+
+  /* https://adrianroselli.com/2019/09/under-engineered-text-boxen.html */
   font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+
   color: inherit;
 }
 

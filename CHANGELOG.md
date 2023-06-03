@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **reset:** inherit `letter-spacing` and `word-spacing` on form controls
+
 ## [2.0.1] - 2023-05-27
 
 ### Changed
