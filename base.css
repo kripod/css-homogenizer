@@ -76,11 +76,6 @@ audio {
   width: 100%;
 }
 
-audio:not([controls]) {
-  /* Prioritize default behavior over custom styles above */
-  display: none;
-}
-
 /* https://github.com/jensimmons/cssremedy/issues/39 */
 table {
   /* Prevent double borders */
@@ -94,4 +89,10 @@ textarea {
   /* Constrain resizing to the block direction */
   resize: vertical;
   resize: block;
+}
+
+[hidden],
+audio:not([controls]) {
+  /* Prioritize default behavior over custom styles above */
+  display: none;
 }

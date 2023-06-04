@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- **base:** respect `hidden` attribute of embedded content elements (`img`, `iframe`, `embed`, `object`, `video`, `audio`, `svg`) and `canvas`
+
 ## [3.0.1] - 2023-06-03
 
 ### Fixed
