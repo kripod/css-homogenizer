@@ -34,17 +34,17 @@ Catering for the needs of token-based theming systems, this project was born.
 
     _Using either [modern-normalize](https://github.com/sindresorhus/modern-normalize) or [@csstools/normalize.css](https://github.com/csstools/normalize.css) is optional but recommended to fix common browser inconsistencies._
 
-2.  Include the following global styles **in order, before any custom CSS:**
+2.  Include the following styles **in the order below, before any custom CSS:**
 
     ```js
     import "modern-normalize/modern-normalize.css";
-    import "css-homogenizer/reset.css";
+    import "css-homogenizer/reset.css"; // or "css-homogenizer/reset-scoped.css"
     import "css-homogenizer/base.css";
     ```
 
-    Embed the snippet or parts of it according to your framework/workflow documentation.
+    You may adopt each stylesheet one by one.
 
-    Plain `<link>` tags may also be used, but make sure to review [performance guidelines](https://csswizardry.com/2018/11/css-and-network-performance/) carefully.
+    Please refer to your framework’s guidelines for importing CSS files at the top level. Plain `<link>` tags may also be used, but be aware of the [performance costs](https://csswizardry.com/2018/11/css-and-network-performance/).
 
 ## What's included?
 
@@ -59,6 +59,69 @@ Nullifies spacings, borders and several typography-related settings:
 - Placeholders have `opacity: 1` set for consistency between browsers.
 
 Obsolete and deprecated HTML elements are ignored, as their usage is strongly discouraged.
+
+### [`reset-scoped.css`](./reset-scoped.css)
+
+Scoped variant of the reset which targets classes instead of element types.
+
+- Classes are prefixed by `_` to avoid collisions with other selectors. E.g. `._p` contains declarations applicable to `p` elements.
+- Rules targeting `html` and `body` elements are omitted, as the scoped stylesheet is meant to be used primarily within component libraries, not apps.
+
+#### Usage with React
+
+When using a compiler like Babel, the [underlying JSX runtime](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) may be overridden. This allows for auto-injecting scoped reset classes to plain HTML elements on the fly:
+
+- `<p>Hi</p>` → `<p class="_p">Hi</p>`
+- `<p className="custom">Hi</p>` → `<p class="_p custom">Hi</p>`
+
+```jsonc
+// babel.config.json
+{
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic",
+        "importSource": "css-homogenizer/reset-scoped/react"
+      }
+    ]
+  ]
+}
+```
+
+#### Usage manually
+
+You may attach a scoped reset class to an element on your own, e.g.:
+
+```html
+<p class="_p">Hi</p>
+```
+
+To see all the classes available, execute the following snippet:
+
+```js
+import { getResetClassName, resetElements } from "css-homogenizer/reset-scoped";
+
+console.log(resetElements.map((element) => getResetClassName(element)));
+```
+
+Helper methods also come handy when dealing with third-party libraries, e.g.:
+
+```jsx
+import { Listbox } from "@headlessui/react";
+import { getResetClassName } from "css-homogenizer/reset-scoped";
+
+function Select(/* … */) {
+  return (
+    <Listbox /* … */>
+      <Listbox.Button className={getResetClassName("button")}>
+        {/* … */}
+      </Listbox.Button>
+      {/* … */}
+    </Listbox>
+  );
+}
+```
 
 ### [`base.css`](./base.css)
 

@@ -1,0 +1,106 @@
+/**
+ * Based on HTML rendering suggestions and the differences across UA sheets:
+ * https://html.spec.whatwg.org/multipage/rendering.html
+ *
+ * Selectors sorted as they appear in the HTML Standard for better compression.
+ */
+
+/* Only for Safari: button, select, input, textarea */
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6,
+._p,
+._hr,
+._pre,
+._blockquote,
+._ol,
+._ul,
+._menu,
+._dl,
+._dd,
+._figure,
+._input,
+._button,
+._select,
+._textarea,
+._fieldset {
+  margin: 0;
+}
+
+._hr,
+._iframe,
+._input,
+._button,
+._select,
+._textarea,
+._fieldset {
+  border-width: 0;
+}
+
+._ol,
+._ul,
+._menu,
+._td,
+._th,
+._input,
+._button,
+._select,
+._textarea,
+._fieldset,
+._legend {
+  padding: 0;
+}
+
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6,
+._address,
+._th {
+  font: inherit; /* font-size, font-weight, font-style */
+}
+
+._ol,
+._ul,
+._menu {
+  list-style: none; /* list-style-type */
+}
+
+._a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+._table {
+  border-spacing: 0;
+}
+
+._th {
+  text-align: inherit;
+}
+
+._input,
+._button,
+._select,
+._textarea {
+  background: none;
+
+  /* https://adrianroselli.com/2019/09/under-engineered-text-boxen.html */
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+
+  color: inherit;
+}
+
+/* Only for Firefox */
+._input::placeholder,
+._textarea::placeholder {
+  color: gray;
+  opacity: 1;
+}
