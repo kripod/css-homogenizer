@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **reset-scoped:** ship CommonJS modules alongside ESM
 
+### Removed
+
+- **reset:** main package entry point as an undocumented alias
+
 ## [3.1.0] - 2023-06-04
 
 ### Added

@@ -34,7 +34,6 @@
       "require": "./dist/cjs/reset-scoped/react/jsx-dev-runtime.js"
     }
   },
-  "main": "reset.css",
   "files": [
     "base.css",
     "reset.css",
