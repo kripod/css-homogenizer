@@ -1,4 +1,5 @@
 node_modules/
-dist/
+reset-scoped/
+!reset-scoped/**/*.ts
 *.log*
 .DS_Store

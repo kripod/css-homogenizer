@@ -5,21 +5,20 @@ import pkg from "./package.json" assert { type: "json" };
 /** @type {import("rollup").RollupOptions} */
 export default {
   input: {
-    "reset-scoped/index": "src/reset-scoped/index.ts",
-    "reset-scoped/react/index": "src/reset-scoped/react/index.ts",
-    "reset-scoped/react/jsx-runtime": "src/reset-scoped/react/jsx-runtime.ts",
-    "reset-scoped/react/jsx-dev-runtime":
-      "src/reset-scoped/react/jsx-dev-runtime.ts",
+    index: "reset-scoped/index.ts",
+    "react/index": "reset-scoped/react/index.ts",
+    "react/jsx-runtime": "reset-scoped/react/jsx-runtime.ts",
+    "react/jsx-dev-runtime": "reset-scoped/react/jsx-dev-runtime.ts",
   },
   output: [
     {
       format: "es",
-      dir: "dist/es",
+      dir: "reset-scoped",
       entryFileNames: "[name].mjs",
     },
     {
       format: "cjs",
-      dir: "dist/cjs",
+      dir: "reset-scoped",
       interop: "esModule",
     },
   ],

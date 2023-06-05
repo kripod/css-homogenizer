@@ -19,28 +19,27 @@
     "./reset.css": "./reset.css",
     "./reset-scoped.css": "./reset-scoped.css",
     "./reset-scoped": {
-      "import": "./dist/es/reset-scoped/index.mjs",
-      "require": "./dist/cjs/reset-scoped/index.js"
+      "import": "./reset-scoped/index.mjs",
+      "require": "./reset-scoped/index.js"
     },
     "./reset-scoped/react": {
-      "import": "./dist/es/reset-scoped/react/index.mjs",
-      "require": "./dist/cjs/reset-scoped/react/index.js"
+      "import": "./reset-scoped/react/index.mjs",
+      "require": "./reset-scoped/react/index.js"
     },
     "./reset-scoped/react/jsx-runtime": {
-      "import": "./dist/es/reset-scoped/react/jsx-runtime.mjs",
-      "require": "./dist/cjs/reset-scoped/react/jsx-runtime.js"
+      "import": "./reset-scoped/react/jsx-runtime.mjs",
+      "require": "./reset-scoped/react/jsx-runtime.js"
     },
     "./reset-scoped/react/jsx-dev-runtime": {
-      "import": "./dist/es/reset-scoped/react/jsx-dev-runtime.mjs",
-      "require": "./dist/cjs/reset-scoped/react/jsx-dev-runtime.js"
+      "import": "./reset-scoped/react/jsx-dev-runtime.mjs",
+      "require": "./reset-scoped/react/jsx-dev-runtime.js"
     }
   },
   "files": [
     "base.css",
     "reset.css",
     "reset-scoped.css",
-    "dist/",
-    "src/"
+    "reset-scoped/"
   ],
   "scripts": {
     "build": "rollup --config --sourcemap",
