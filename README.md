@@ -28,7 +28,7 @@ Catering for the needs of token-based theming systems, this project was born.
 
 1.  Install the library and a normalizer with your package manager (or use [a CDN](https://www.jsdelivr.com/package/npm/css-homogenizer)):
 
-    ```shell
+    ```sh
     npm install css-homogenizer modern-normalize
     ```
 
