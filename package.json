@@ -13,6 +13,7 @@
   "repository": "kripod/css-homogenizer",
   "license": "MIT",
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
+  "sideEffects": false,
   "exports": {
     "./base.css": "./base.css",
     "./reset.css": "./reset.css",
