@@ -1,11 +1,11 @@
 import { getResetClassName } from "../index";
 
-/**
- * @param {React.ElementType} type
- * @param {Object.<string, *>} props
- */
-export function transformProps(type, props) {
-  const resetClassName = getResetClassName(type);
+export function transformProps(
+  type: React.ElementType,
+  props: { [key: string]: any },
+) {
+  const resetClassName =
+    typeof type === "string" ? getResetClassName(type) : undefined;
   return resetClassName !== undefined
     ? {
         ...props,

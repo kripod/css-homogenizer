@@ -1,4 +1,4 @@
-export declare const resetElements: readonly [
+export const resetElements = [
   "a",
   "address",
   "blockquote",
@@ -27,8 +27,12 @@ export declare const resetElements: readonly [
   "textarea",
   "th",
   "ul",
-];
+] as const;
 
-export declare function getResetClassName(
+const resetElementsSet = new Set<string>(resetElements);
+
+export function getResetClassName(
   element: (typeof resetElements)[number] | (string & {}),
-): string | undefined;
+) {
+  return resetElementsSet.has(element) ? `_${element}` : undefined;
+}
