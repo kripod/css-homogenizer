@@ -82,10 +82,10 @@ When using a compiler like Babel, the [underlying JSX runtime](https://legacy.re
       "@babel/preset-react",
       {
         "runtime": "automatic",
-        "importSource": "css-homogenizer/reset-scoped/react"
-      }
-    ]
-  ]
+        "importSource": "css-homogenizer/reset-scoped/react",
+      },
+    ],
+  ],
 }
 ```
 
