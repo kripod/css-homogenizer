@@ -1,5 +1,7 @@
 node_modules/
-reset-scoped/
-!reset-scoped/**/*.ts
+reset-scoped/**/*.d.*
+reset-scoped/**/*.js
+reset-scoped/**/*.mjs
+reset-scoped/**/*.map
 *.log*
 .DS_Store

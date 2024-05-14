@@ -51,13 +51,13 @@
     "lint:fix:format": "prettier --write ."
   },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.2",
-    "@types/react": "^18.2.8",
-    "prettier": "^2.8.8",
-    "react": "^18.2.0",
-    "rollup": "^3.23.1",
-    "rollup-plugin-ts": "^3.2.0",
-    "typescript": "^5.1.3"
+    "@tsconfig/recommended": "^1.0.6",
+    "@types/react": "^18.3.2",
+    "prettier": "^3.2.5",
+    "react": "^18.3.1",
+    "rollup": "^4.17.2",
+    "rollup-plugin-ts": "^3.4.5",
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "react": "^0.14.10 || ^15.7.0 || ^16.14.0 || >=17"
@@ -67,5 +67,5 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@8.6.0"
+  "packageManager": "pnpm@9.1.1"
 }

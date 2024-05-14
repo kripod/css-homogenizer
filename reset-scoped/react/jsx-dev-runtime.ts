@@ -2,15 +2,14 @@ import * as ReactJSXDEVRuntime from "react/jsx-dev-runtime";
 
 import { transformProps } from "./transformProps";
 
-// @ts-expect-error
-export const { Fragment } = ReactJSXDEVRuntime;
+export const Fragment: React.ExoticComponent<{ children?: React.ReactNode }> =
+  ReactJSXDEVRuntime.Fragment;
 
 export function jsxDEV(
   type: React.ElementType,
   props: { [key: string]: any },
   ...restArgs: any[]
-) {
-  // @ts-expect-error
+): React.ReactElement {
   return ReactJSXDEVRuntime.jsxDEV(
     type,
     transformProps(type, props),
