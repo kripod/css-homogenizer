@@ -2,23 +2,27 @@ import ts from "rollup-plugin-ts";
 
 import pkg from "./package.json" assert { type: "json" };
 
+const rootDir = "reset-scoped";
+const outDir = "reset-scoped";
+
 /** @type {import("rollup").RollupOptions} */
 export default {
   input: {
-    index: "reset-scoped/index.ts",
-    "react/index": "reset-scoped/react/index.ts",
-    "react/jsx-runtime": "reset-scoped/react/jsx-runtime.ts",
-    "react/jsx-dev-runtime": "reset-scoped/react/jsx-dev-runtime.ts",
+    index: `${rootDir}/index.ts`,
+    "react/index": `${rootDir}/react/index.ts`,
+    "react/jsx-runtime": `${rootDir}/react/jsx-runtime.ts`,
+    "react/jsx-dev-runtime": `${rootDir}/react/jsx-dev-runtime.ts`,
   },
   output: [
     {
       format: "es",
-      dir: "reset-scoped",
+      dir: outDir,
       entryFileNames: "[name].mjs",
+      chunkFileNames: "[name]-[hash].mjs",
     },
     {
       format: "cjs",
-      dir: "reset-scoped",
+      dir: outDir,
       interop: "esModule",
     },
   ],
