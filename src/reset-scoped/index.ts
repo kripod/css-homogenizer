@@ -34,5 +34,5 @@ const resetElementsSet = new Set<string>(resetElements);
 export function getResetClassName(
   element: (typeof resetElements)[number] | (string & {}),
 ) {
-  return resetElementsSet.has(element) ? `_${element}` : undefined;
+  return resetElementsSet.has(element) ? "_" + element : undefined;
 }

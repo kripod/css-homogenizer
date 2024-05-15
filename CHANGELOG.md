@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Fixed
+### Changed
 
-- **reset-scoped:** output chunk file names
+- **reset-scoped:** rewrite runtime, bundled using [tshy](https://github.com/isaacs/tshy)
 
 ## [3.2.1] - 2023-06-05
 

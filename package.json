@@ -13,51 +13,77 @@
   "repository": "kripod/css-homogenizer",
   "license": "MIT",
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css"
+  ],
+  "type": "module",
   "exports": {
     "./base.css": "./base.css",
     "./reset.css": "./reset.css",
     "./reset-scoped.css": "./reset-scoped.css",
     "./reset-scoped": {
-      "import": "./reset-scoped/index.mjs",
-      "require": "./reset-scoped/index.js"
+      "import": {
+        "types": "./dist/esm/reset-scoped/index.d.ts",
+        "default": "./dist/esm/reset-scoped/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/reset-scoped/index.d.ts",
+        "default": "./dist/commonjs/reset-scoped/index.js"
+      }
     },
     "./reset-scoped/react": {
-      "import": "./reset-scoped/react/index.mjs",
-      "require": "./reset-scoped/react/index.js"
+      "import": {
+        "types": "./dist/esm/reset-scoped/react/index.d.ts",
+        "default": "./dist/esm/reset-scoped/react/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/reset-scoped/react/index.d.ts",
+        "default": "./dist/commonjs/reset-scoped/react/index.js"
+      }
     },
     "./reset-scoped/react/jsx-runtime": {
-      "import": "./reset-scoped/react/jsx-runtime.mjs",
-      "require": "./reset-scoped/react/jsx-runtime.js"
+      "import": {
+        "types": "./dist/esm/reset-scoped/react/jsx-runtime.d.ts",
+        "default": "./dist/esm/reset-scoped/react/jsx-runtime.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/reset-scoped/react/jsx-runtime.d.ts",
+        "default": "./dist/commonjs/reset-scoped/react/jsx-runtime.js"
+      }
     },
     "./reset-scoped/react/jsx-dev-runtime": {
-      "import": "./reset-scoped/react/jsx-dev-runtime.mjs",
-      "require": "./reset-scoped/react/jsx-dev-runtime.js"
+      "import": {
+        "types": "./dist/esm/reset-scoped/react/jsx-dev-runtime.d.ts",
+        "default": "./dist/esm/reset-scoped/react/jsx-dev-runtime.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/reset-scoped/react/jsx-dev-runtime.d.ts",
+        "default": "./dist/commonjs/reset-scoped/react/jsx-dev-runtime.js"
+      }
     }
   },
   "files": [
     "base.css",
     "reset.css",
     "reset-scoped.css",
-    "reset-scoped/"
+    "dist/"
   ],
   "scripts": {
-    "build": "rollup --config --sourcemap",
+    "prepare": "tshy",
     "clean": "git clean --interactive -dx --exclude node_modules/",
-    "lint": "pnpm run lint:format && pnpm run lint:types",
+    "lint": "pnpm run \"/^lint:(?!fix)/\"",
     "lint:format": "prettier --check .",
     "lint:types": "tsc --noEmit",
-    "lint:fix": "pnpm run lint:fix:format",
+    "lint:fix": "pnpm run \"/^lint:fix:/\"",
     "lint:fix:format": "prettier --write ."
   },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.6",
-    "@types/react": "^18.3.2",
-    "prettier": "^3.2.5",
-    "react": "^18.3.1",
-    "rollup": "^4.17.2",
-    "rollup-plugin-ts": "^3.4.5",
-    "typescript": "^5.4.5"
+    "@total-typescript/tsconfig": "1.0.4",
+    "@types/react": "18.3.2",
+    "prettier": "3.2.5",
+    "react": "18.3.1",
+    "tshy": "1.14.0",
+    "typescript": "5.4.5"
   },
   "peerDependencies": {
     "react": "^0.14.10 || ^15.7.0 || ^16.14.0 || >=17"
@@ -67,5 +93,16 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@9.1.1"
+  "packageManager": "pnpm@9.1.1",
+  "tshy": {
+    "exports": {
+      "./base.css": "./base.css",
+      "./reset.css": "./reset.css",
+      "./reset-scoped.css": "./reset-scoped.css",
+      "./reset-scoped": "./src/reset-scoped/index.ts",
+      "./reset-scoped/react": "./src/reset-scoped/react/index.ts",
+      "./reset-scoped/react/jsx-runtime": "./src/reset-scoped/react/jsx-runtime.ts",
+      "./reset-scoped/react/jsx-dev-runtime": "./src/reset-scoped/react/jsx-dev-runtime.ts"
+    }
+  }
 }

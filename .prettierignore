@@ -1,5 +1,5 @@
 pnpm-lock.yaml
-reset-scoped/**/*.d.*
-reset-scoped/**/*.js
-reset-scoped/**/*.mjs
 ua-sheets/*.css
+dist/
+.tshy/
+.tshy-build/
