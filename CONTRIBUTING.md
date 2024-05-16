@@ -8,23 +8,26 @@ This project is governed by the [Contributor Covenant Code of Conduct](./CODE_OF
 
 ## Proposing a change
 
-Before making a non-trivial change, please discuss it via [issues].
+Before making a non-trivial change, please discuss through [issues].
 
 ## Development process
 
-Please keep the scope of each pull request to **one** specific feature or fix.
+Keep the scope of each pull request to **one** specific feature or fix.
+
+### Prequisites
+
+- [Node.js](https://nodejs.org/) – version specified in `.nvmrc`
+- [pnpm](https://pnpm.io/) – available via [Corepack](https://nodejs.org/api/corepack.html)
 
 ### Workflow
 
-0. Assign related [issues] to yourself
-1. Clone a fork of the `main` branch
-2. Before pushing, execute `npm run format` to fix stylistic issues using [Prettier]
-3. Open a new pull request, [referencing corresponding issues] if available
+0. Assign related [issues] to yourself.
+1. Clone a fork of the 'main' branch and install all the required dependencies via `pnpm install`.
+2. Make changes to the codebase, running `pnpm prepare` to build them.
+3. Open a new pull request, [referencing corresponding issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) if available.
 
 ## License
 
 As a collaborator, you agree to license your contributions under the project's [MIT license](./LICENSE).
 
 [issues]: https://github.com/kripod/css-homogenizer/issues
-[prettier]: https://prettier.io/
-[referencing corresponding issues]: https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
