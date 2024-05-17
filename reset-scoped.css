@@ -107,3 +107,8 @@
 ._select {
   border-radius: 0;
 }
+
+/* Chrome-only */
+._select:disabled {
+  opacity: 1;
+}

@@ -112,3 +112,8 @@ textarea::placeholder {
 select {
   border-radius: 0;
 }
+
+/* Chrome-only */
+select:disabled {
+  opacity: 1;
+}
