@@ -1,5 +1,17 @@
 # css-homogenizer
 
+## 4.0.0
+
+### Major Changes
+
+- [`704ca8e`](https://github.com/kripod/css-homogenizer/commit/704ca8edbdd7283160c21a3dfbfcaca704bb696c) Thanks [@kripod](https://github.com/kripod)! - refactor(reset-scoped)!: rewrite runtime, bundled using [tshy](https://github.com/isaacs/tshy)
+
+### Patch Changes
+
+- [`b8b9116`](https://github.com/kripod/css-homogenizer/commit/b8b9116b871b150d70d357b6efa4ef31c3a9d459) Thanks [@kripod](https://github.com/kripod)! - fix(reset): disabled select opacity in Chrome
+
+- [`7da2b14`](https://github.com/kripod/css-homogenizer/commit/7da2b14c3ec9d699b72aefdbb2c3fa5a3c89fca2) Thanks [@kripod](https://github.com/kripod)! - fix(reset): select border-radius in Safari
+
 ## [3.2.1] - 2023-06-05
 
 ### Fixed
