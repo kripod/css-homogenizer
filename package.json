@@ -12,7 +12,7 @@
   "bugs": "https://github.com/kripod/css-homogenizer/issues",
   "repository": "kripod/css-homogenizer",
   "license": "MIT",
-  "author": "Kristóf Poduszló <kripod@protonmail.com>",
+  "author": "Kristóf Poduszló (https://www.kripod.dev/)",
   "sideEffects": [
     "*.css"
   ],
