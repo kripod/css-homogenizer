@@ -9,7 +9,6 @@ html {
   line-height: 1;
 }
 
-/* Only for Safari: button, select, input, textarea */
 body,
 h1,
 h2,
@@ -27,10 +26,10 @@ menu,
 dl,
 dd,
 figure,
-input,
-button,
-select,
-textarea,
+input, /* Safari-only */
+button, /* Safari-only */
+select, /* Safari-only */
+textarea, /* Safari-only */
 fieldset {
   margin: 0;
 }
@@ -103,9 +102,13 @@ textarea {
   color: inherit;
 }
 
-/* Only for Firefox */
 input::placeholder,
 textarea::placeholder {
   color: gray;
-  opacity: 1;
+  opacity: 1; /* Firefox-only */
+}
+
+/* Safari-only */
+select {
+  border-radius: 0;
 }

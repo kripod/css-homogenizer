@@ -5,7 +5,6 @@
  * Selectors sorted as they appear in the HTML Standard for better compression.
  */
 
-/* Only for Safari: button, select, input, textarea */
 ._h1,
 ._h2,
 ._h3,
@@ -22,10 +21,10 @@
 ._dl,
 ._dd,
 ._figure,
-._input,
-._button,
-._select,
-._textarea,
+._input, /* Safari-only */
+._button, /* Safari-only */
+._select, /* Safari-only */
+._textarea, /* Safari-only */
 ._fieldset {
   margin: 0;
 }
@@ -98,9 +97,13 @@
   color: inherit;
 }
 
-/* Only for Firefox */
 ._input::placeholder,
 ._textarea::placeholder {
   color: gray;
-  opacity: 1;
+  opacity: 1; /* Firefox-only */
+}
+
+/* Safari-only */
+._select {
+  border-radius: 0;
 }
