@@ -1,28 +1,28 @@
 <p align="center">
-	<img alt="css-homogenizer" src="https://raw.githubusercontent.com/kripod/css-homogenizer/main/assets/logo.svg?sanitize=true" width="524">
+	<img src="https://raw.githubusercontent.com/kripod/css-homogenizer/main/assets/logo.svg" alt="css-homogenizer logo" width="524" height="96">
 </p>
 
 <p align="center">
-	Base CSS encouraging proper HTML semantics and the use of custom design tokens
+	Base CSS endorsing semantic HTML and design token usage
 </p>
 
 <p align="center">
-	<a href="https://www.npmjs.com/package/css-homogenizer"><img alt="npm" src="https://img.shields.io/npm/v/css-homogenizer"></a>
+	<a href="https://www.npmjs.com/package/css-homogenizer"><img src="https://img.shields.io/npm/v/css-homogenizer/latest" alt="npm"></a>
 </p>
 
 ## Backstory
 
 Browsing through the issues of [CSS Remedy](https://github.com/jensimmons/cssremedy), I came across an important observation by Jen Simmons:
 
-> Why don't people use `<fieldset>` far more — instead of divs in their forms?
+> Why don’t people use `<fieldset>` far more — instead of divs in their forms?
 >
-> Perhaps it's because fieldset comes with ugly default styling.
+> Perhaps it’s because fieldset comes with ugly default styling.
 
-This made me question common [HTML rendering suggestions](https://html.spec.whatwg.org/multipage/rendering.html). Each design is different, so **there isn't a single set of sensible defaults** for every website.
+This made me question common [HTML rendering suggestions](https://html.spec.whatwg.org/multipage/rendering.html). Each design is different, so **there isn’t a single set of sensible defaults** for every website.
 
 Style normalization is crucial for a consistent user experience among browsers. With the emergence of various design systems, however, **CSS normalizers and resets should coexist and complement each other.**
 
-Catering for the needs of token-based theming systems, this project was born.
+Catering to the needs of token-based theming systems, this project was born.
 
 ## Usage
 
@@ -46,13 +46,13 @@ Catering for the needs of token-based theming systems, this project was born.
 
     Please refer to your framework’s guidelines for importing CSS files at the top level. Plain `<link>` tags may also be used, but be aware of the [performance costs](https://csswizardry.com/2018/11/css-and-network-performance/).
 
-## What's included?
+## What’s included?
 
 ### [`reset.css`](./reset.css)
 
-Nullifies spacings, borders and several typography-related settings:
+Nullifies spacings, borders and several typography-related settings.
 
-- The default line height is reduced to match each element's own font size.
+- Line heights are matched up with font sizes.
 - Heading (`h1`–`h6`), `th` and `address` elements inherit their font properties and text alignment from parents.
 - List (`ul`, `ol`, `menu`) and `a` elements are unstyled to promote proper HTML semantics over misleading visuals.
 - Form controls are unstyled to cater for overrides.
@@ -62,10 +62,10 @@ Obsolete and deprecated HTML elements are ignored, as their usage is strongly di
 
 ### [`reset-scoped.css`](./reset-scoped.css)
 
-Scoped variant of the reset which targets classes instead of element types.
+A scoped variant of the reset, targeting classes instead of element types.
 
 - Classes are prefixed by `_` to avoid collisions with other selectors. E.g. `._p` contains declarations applicable to `p` elements.
-- Rules targeting `html` and `body` elements are omitted, as the scoped stylesheet is meant to be used primarily within component libraries, not apps.
+- Rules for `html` and `body` elements are omitted.
 
 #### Usage with React
 
@@ -105,7 +105,7 @@ import { getResetClassName, resetElements } from "css-homogenizer/reset-scoped";
 console.log(resetElements.map((element) => getResetClassName(element)));
 ```
 
-Helper methods also come handy when dealing with third-party libraries, e.g.:
+Helper methods also come in handy when dealing with third-party libraries, e.g.:
 
 ```jsx
 import { Listbox } from "@headlessui/react";
@@ -125,7 +125,7 @@ function Select(/* … */) {
 
 ### [`base.css`](./base.css)
 
-Provides a minimalistic set of generally useful rules. Please refer to the file's inline comments for further details.
+Provides a minimalistic set of generally useful rules. Please refer to the file’s inline comments for further details.
 
 ## Browser support
 
@@ -133,8 +133,8 @@ Provides a minimalistic set of generally useful rules. Please refer to the file'
 - Latest Firefox
 - Latest Safari
 
-## Acknowledgements
+## Acknowledgments
 
-This project was primarily inspired by [Reset CSS](https://meyerweb.com/eric/tools/css/reset/), [CSS Remedy](https://github.com/jensimmons/cssremedy) and [sanitize.css](https://github.com/csstools/sanitize.css). It wouldn't have been possible without the long-standing efforts of the authors behind those predecessors.
+This project was mainly inspired by [Reset CSS](https://meyerweb.com/eric/tools/css/reset/), [CSS Remedy](https://github.com/jensimmons/cssremedy) and [sanitize.css](https://github.com/csstools/sanitize.css). It wouldn’t have been possible without the long-standing efforts of the authors behind those predecessors.
 
-The logo's test tube emoji is courtesy of [Twemoji](https://twemoji.twitter.com/) and the font in use is [Lobster](https://fonts.google.com/specimen/Lobster).
+The logo’s test tube emoji is courtesy of [Twemoji](https://twemoji.twitter.com/) and the font in use is [Lobster](https://fonts.google.com/specimen/Lobster).
