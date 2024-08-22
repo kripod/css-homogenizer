@@ -1,5 +1,11 @@
 # css-homogenizer
 
+## 4.1.0
+
+### Minor Changes
+
+- [`9290a23`](https://github.com/kripod/css-homogenizer/commit/9290a23dfcf23489e9951623e1454d8260255568) Thanks [@kripod](https://github.com/kripod)! - feat(reset): table `border-color` inheritance from `color` (based upon [sindresorhus/modern-normalize#79](https://github.com/sindresorhus/modern-normalize/pull/79))
+
 ## 4.0.0
 
 ### Major Changes
