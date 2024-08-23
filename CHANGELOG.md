@@ -1,5 +1,11 @@
 # css-homogenizer
 
+## 4.1.1
+
+### Patch Changes
+
+- [`e3fdeb5`](https://github.com/kripod/css-homogenizer/commit/e3fdeb563c7774e58c3735116869901db2327142) Thanks [@kripod](https://github.com/kripod)! - fix(reset): table `border-color` inheritance to enable `*` overrides (e.g. [Tailwind’s Preflight styles](https://unpkg.com/tailwindcss@%5E3/src/css/preflight.css) rely upon this)
+
 ## 4.1.0
 
 ### Minor Changes
