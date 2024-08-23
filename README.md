@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-	<a href="https://www.npmjs.com/package/css-homogenizer"><img src="https://img.shields.io/npm/v/css-homogenizer/latest" alt="npm"></a>
+	<a href="https://www.npmjs.com/package/css-homogenizer"><img src="https://img.shields.io/npm/v/css-homogenizer" alt="npm version"></a>
 </p>
 
 ## Backstory
