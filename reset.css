@@ -82,9 +82,7 @@ a {
 
 table {
   border-spacing: 0;
-
-  /* https://github.com/sindresorhus/modern-normalize/pull/79 */
-  border-color: currentColor;
+  border-color: inherit;
 }
 
 th {
