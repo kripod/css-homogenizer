@@ -1,5 +1,11 @@
 # css-homogenizer
 
+## 4.1.2
+
+### Patch Changes
+
+- [`5684082`](https://github.com/kripod/css-homogenizer/commit/5684082624f98fe043ce1d087cd0c7888b6e2d1c) Thanks [@kripod](https://github.com/kripod)! - docs(readme): simplify version badge
+
 ## 4.1.1
 
 ### Patch Changes
