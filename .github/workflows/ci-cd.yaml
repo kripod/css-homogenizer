@@ -1,5 +1,9 @@
 name: CI/CD
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -23,6 +27,7 @@ jobs:
       - run: pnpm run lint
       - run: pnpm run --if-present test
       - name: Create Release Pull Request or Publish to npm
+        if: ${{ github.ref == 'refs/heads/main' }}
         uses: changesets/action@v1
         with:
           publish: pnpm exec changeset publish
