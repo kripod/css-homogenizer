@@ -79,13 +79,13 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
-    "@changesets/cli": "2.27.7",
+    "@changesets/cli": "2.27.9",
     "@total-typescript/tsconfig": "1.0.4",
-    "@types/react": "18.3.4",
+    "@types/react": "18.3.12",
     "prettier": "3.3.3",
     "react": "18.3.1",
     "tshy": "3.0.2",
-    "typescript": "5.5.4"
+    "typescript": "5.6.3"
   },
   "peerDependencies": {
     "react": "^0.14.10 || ^15.7.0 || ^16.14.0 || >=17"
@@ -95,7 +95,7 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.12.2",
   "tshy": {
     "exports": {
       "./base.css": "./base.css",
