@@ -91,7 +91,7 @@ textarea {
   resize: block;
 }
 
-[hidden],
+[hidden]:not([hidden="until-found"]),
 audio:not([controls]) {
   /* Prioritize default behavior over custom styles above */
   display: none;
