@@ -1,5 +1,11 @@
 # css-homogenizer
 
+## 4.1.3
+
+### Patch Changes
+
+- [`9b7f94e`](https://github.com/kripod/css-homogenizer/commit/9b7f94e19c4c4377c7c97e5d95dc579802dea4ed) Thanks [@kripod](https://github.com/kripod)! - fix(base): respect `hidden="until-found"` attribute
+
 ## 4.1.2
 
 ### Patch Changes
